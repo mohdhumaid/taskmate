@@ -1,9 +1,71 @@
 {% extends 'base.html' %}
 {{% block title %}
 <title>Contact Us-Taskmate</title>
+	<style type="text/css">
+		body {
+	border: 20px solid #bdc3c7;
+	padding: 20px;
+	max-width: 700px;
+	width: 80%;
+	margin: 20px auto;
+}
+.quote {
+	border-left:5px solid #bdc3c7;
+	padding-left: 5px;
+}
+.date {
+	color: #3498db;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+}
+.post {
+	margin-bottom: 20px;
+}
+h2 {
+	color: #2c3e50;
+	font-size: 2.0rem;
+}
+hr{
+	height: 30px;
+	border-style: solid;
+	border-color: black;
+	border-width: 1px 0 0 0;
+	border-radius: 20px;
+}
+hr:before {
+	display: block;
+    content: "";
+    height: 30px;
+    margin-top: -31px;
+    border-style: solid;
+    background-color: black;
+    border-width: 0 0 1px 0;
+    border-radius: 20px;
+}
+
+	</style>
+
     {% endblock title %}
      {% block content %}
      <div class="container">
-     <h1>Hii context</h1>
+     <div class="post">
+		<div class="date">December 20th 2019</div>
+		<h2>This is my First Article</h2>
+		<p class="quote">First, I would like to examine the current solar cell technologies available and then look at their drawbacks. Then I will explore the research field of nano solar cells, and the science behind them.Finally, I will consider the implications that these technologies would have on our society. Before introducing new solar products which use nanotechnology, it is necessary to explain the basic process that a normal solar cell uses. Conventional solar cells are called photovoltaic cells.These cells are made out of semiconducting cssmaterial, usually silicon. When light hits the cells, they absorb energy though photons. This absorbed energy knocks out electrons in the silicon, allowing them to flow. By adding different impurities to the silicon such as phosphorus or boron, an electric field can be established. This electric field acts as a diode, because it only allows electrons to flow in one direction (Fig. 1). Consequently, the end result is a current of electrons, better known to us as electricity
+        </p>
+		<p>Current means of energy production all have environmental drawbacks. These drawbacks include the damming of rivers, the creation of nuclear waste, and the pollution associated with fossil fuels. The breakthrough has led theorists to predict that plastic solar cells could one day become five times more efficient than current solar cell technology. Like paint, the composite can be sprayed onto other materials and used as portable electricity. A sweater coated in the material could power a cell phone or other wireless devices. A hydrogen powered car painted with the film could potentially convert enough energy into electricity to continually recharge the car's battery.The researchers envision that one day "solar farms" consisting of the plastic material could be rolled across deserts to generate enough clean energy to</p>
+		<hr>
+
+	</div>
+
+	<div class="post">
+		<div class="date">januaty 5th 2019</div>
+		<h2>This is Aother Article</h2>
+		<p class="quote">This type of cell is cheaper to manufacture than conventional ones for two main reasons. First, these plastic cells are not made from silicon, which can be very expensive. Second, manufacturing of these cells does not requirexpensive equipment such as clean rooms or vacuum chambers like conventional silicon based solar cells. Instead, these plastic cells can be manufactured ineaker. UC Berkeley graduate student Wendy Huynh says, “We use a much dirtier process, and that makes it cheap”.Another potential feature of these solar cells is that the nanorods could be ‘tuned’ to absorb various wavelengths of light. This could significantly increase the efficiency ofthe solar cell because more of the incident light could be utilized.  the end result is a current of electrons, better known to us as electricity
+        </p>
+		<p>C have environmental drawbacks. These drawbacks include the damming of rivers, the creation of nuclear waste, and the pollution associated with fossil fuels. The breakthrough has led theorists to predict that plastic solar cells could one day become five times more efficient than current solar cell technology. Like paint, the composite can be sprayed onto other materials and used as portable electricity. A sweater coated in the material could power a cell phone or other wireless devices. A hydrogen powered car painted with the film could potentially convert enough energy into electricity to continually recharge the car's battery.The researchers envision that one day "solar farms" consisting of the plastic material could be rolled across deserts to generate enough clean energy to</p>
+		<hr>
+
+	</div>
      </div>
  {% endblock content %}
