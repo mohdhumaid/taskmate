@@ -7,11 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="{% static 'css/blog.css' %}">">
 {% endblock css %}
      {% block content %}
-        <div class="container"> 
+        <div class="container body1"> 
         <div class="post">
             <div class="date">March 22nd 2020</div>
             <h2>Todo List example application</h2>
-            <p class="quote body1">
+            <p class="quote">
                 The Todo List application is the hello world application for the Eventuate™ Platform. It illustrates how you can use the platform to write an application with a microservices architecture that uses Event Sourcing and Command Query Responsibility Segregation (CQRS). The Todo List application lets users maintain a todo list.
                 The Todo List application is a Java and Spring Boot application built using Eventuate™'s Event Sourcing based programming model. Todos are implemented by an Event Sourcing-based TodoAggregate. The aggregate's events are persisted in the Eventuate event store. The application also maintains a materialized view of the data in MySQL.
                 Don't forget to take a look at the other Eventuate example applications.
