@@ -3,69 +3,31 @@
 <title>Contact Us-Taskmate</title>
 {% endblock title %}
 {% block css %}
-	<style type="text/css">
-		body {
-	border: 20px solid #bdc3c7;
-	padding: 20px;
-	max-width: 700px;
-	width: 80%;
-	margin: 20px auto;
-}
-.quote {
-	border-left:5px solid #bdc3c7;
-	padding-left: 5px;
-}
-.date {
-	color: #3498db;
-	text-transform: uppercase;
-	letter-spacing: .2rem;
-}
-.post {
-	margin-bottom: 20px;
-}
-h2 {
-	color: #2c3e50;
-	font-size: 2.0rem;
-}
-hr{
-	height: 30px;
-	border-style: solid;
-	border-color: black;
-	border-width: 1px 0 0 0;
-	border-radius: 20px;
-}
-hr:before {
-	display: block;
-    content: "";
-    height: 30px;
-    margin-top: -31px;
-    border-style: solid;
-    background-color: black;
-    border-width: 0 0 1px 0;
-    border-radius: 20px;
-}
-	</style>
+	<link rel="stylesheet" type="text/css" href="type="text/css" href="{% static 'css/blog.css' %}">">
 {% endblock css %}
      {% block content %}
-     <div class="container">
-     <div class="post">
-		<div class="date">December 20th 2019</div>
-		<h2>This is my First Article</h2>
-		<p class="quote">First, I would like to examine the current solar cell technologies available and then look at their drawbacks. Then I will explore the research field of nano solar cells, and the science behind them.Finally, I will consider the implications that these technologies would have on our society. Before introducing new solar products which use nanotechnology, it is necessary to explain the basic process that a normal solar cell uses. Conventional solar cells are called photovoltaic cells.These cells are made out of semiconducting cssmaterial, usually silicon. When light hits the cells, they absorb energy though photons. This absorbed energy knocks out electrons in the silicon, allowing them to flow. By adding different impurities to the silicon such as phosphorus or boron, an electric field can be established. This electric field acts as a diode, because it only allows electrons to flow in one direction (Fig. 1). Consequently, the end result is a current of electrons, better known to us as electricity
-        </p>
-		<p>Current means of energy production all have environmental drawbacks. These drawbacks include the damming of rivers, the creation of nuclear waste, and the pollution associated with fossil fuels. The breakthrough has led theorists to predict that plastic solar cells could one day become five times more efficient than current solar cell technology. Like paint, the composite can be sprayed onto other materials and used as portable electricity. A sweater coated in the material could power a cell phone or other wireless devices. A hydrogen powered car painted with the film could potentially convert enough energy into electricity to continually recharge the car's battery.The researchers envision that one day "solar farms" consisting of the plastic material could be rolled across deserts to generate enough clean energy to</p>
-		<hr>
+        <div class="container"> 
+        <div class="post">
+            <div class="date">March 22nd 2020</div>
+            <h2>Todo List example application</h2>
+            <p class="quote">
+                The Todo List application is the hello world application for the Eventuate™ Platform. It illustrates how you can use the platform to write an application with a microservices architecture that uses Event Sourcing and Command Query Responsibility Segregation (CQRS). The Todo List application lets users maintain a todo list.
+                The Todo List application is a Java and Spring Boot application built using Eventuate™'s Event Sourcing based programming model. Todos are implemented by an Event Sourcing-based TodoAggregate. The aggregate's events are persisted in the Eventuate event store. The application also maintains a materialized view of the data in MySQL.
+                Don't forget to take a look at the other Eventuate example applications.
+            </p>
+            <p>From overwhelmed to on top of it
+                Todoist gives you the confidence that everything’s organized and accounted for, so you can make progress on the things that are important to you</p>
+            <hr>
 
-	</div>
+        </div>
+            <div class="post">
+                <div class="date">March 20th 2019</div>
+                <h2>This is Aother Article</h2>
+                <p class="quote">From consulting a simple grocery list to planning for a big day, shared lists help you stay connected with family, friends, and colleagues. Make tasks more manageable Break tasks down into simple steps, add due dates, and set reminders to keep you on track.
+                </p>
+                <p>A to-do list you’d actually use. With award winning design and powerful features, Any.do is the to-do list you would actually stick to. Designed to help you get organized, achieve your goals and never forget a thing.</p>
+                <hr>
 
-	<div class="post">
-		<div class="date">januaty 5th 2019</div>
-		<h2>This is Aother Article</h2>
-		<p class="quote">This type of cell is cheaper to manufacture than conventional ones for two main reasons. First, these plastic cells are not made from silicon, which can be very expensive. Second, manufacturing of these cells does not requirexpensive equipment such as clean rooms or vacuum chambers like conventional silicon based solar cells. Instead, these plastic cells can be manufactured ineaker. UC Berkeley graduate student Wendy Huynh says, “We use a much dirtier process, and that makes it cheap”.Another potential feature of these solar cells is that the nanorods could be ‘tuned’ to absorb various wavelengths of light. This could significantly increase the efficiency ofthe solar cell because more of the incident light could be utilized.  the end result is a current of electrons, better known to us as electricity
-        </p>
-		<p>C have environmental drawbacks. These drawbacks include the damming of rivers, the creation of nuclear waste, and the pollution associated with fossil fuels. The breakthrough has led theorists to predict that plastic solar cells could one day become five times more efficient than current solar cell technology. Like paint, the composite can be sprayed onto other materials and used as portable electricity. A sweater coated in the material could power a cell phone or other wireless devices. A hydrogen powered car painted with the film could potentially convert enough energy into electricity to continually recharge the car's battery.The researchers envision that one day "solar farms" consisting of the plastic material could be rolled across deserts to generate enough clean energy to</p>
-		<hr>
-
-	</div>
+            </div>
      </div>
  {% endblock content %}
