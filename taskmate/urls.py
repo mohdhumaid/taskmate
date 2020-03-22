@@ -22,6 +22,7 @@ urlpatterns = [
     path('', todolist_view.index, name='index'), 
     path('todolist/', include('todolist_app.urls')),
     path('account/', include('users_app.urls')),
+    path('game', todolist_view.game, name='game'),
     path('contact', todolist_view.contact, name='contact'),    
     path('about-us', todolist_view.about, name='about'),
 ]
