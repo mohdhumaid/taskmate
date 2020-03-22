@@ -62,16 +62,19 @@ def index(request):
             'index_text':"Welcome Index page ",
             }
     return render(request, 'index.html', context)
+@login_required
 def game(request):
     context = {
             'game_text':"Welcome welcome page ",
             }
     return render(request, 'game.html', context)
+@login_required
 def contact(request):
     context = {
             'contact_text':"Welcome Contact page ",
             }
     return render(request, 'contact.html', context)
+@login_required
 def about(request):
     context = {
         'welcome_text':"Welcome About page ",
