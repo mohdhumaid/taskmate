@@ -1,5 +1,5 @@
-.body22 {
-	background-color: white;
+body {
+	background-color: #232323;
 	margin: 0;
 	font-family: "Montserrat", "Avenir";
 }
@@ -14,9 +14,14 @@
 	-webkit-transition: background 1.00s;
 	-moz-transition: background 1.00s;
 }
-#container {
+#container1 {
 	margin: 20px auto; 
 	max-width: 600px;
+	background: black;
+}
+.colorBlack {
+	color: black;
+	background: rgb(0, 0, 0);
 }
 h1 {
 	text-align: center;
